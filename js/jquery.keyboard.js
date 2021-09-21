@@ -186,7 +186,8 @@ http://www.opensource.org/licenses/mit-license.php
 		tmp.bind(bindings.split(' ').join(base.namespace + ' '), function(e) {
 			clearTimeout(base.timer3);
 			base.timer3 = setTimeout(function() {
-				base.checkClose(e);
+				if(base)
+				    base.checkClose(e);
 			}, 1);
 		});
 
@@ -476,6 +477,8 @@ http://www.opensource.org/licenses/mit-license.php
 		// the keyboard
 		base.timer2 = setTimeout(function () {
 			var undef;
+			if(!base)
+				return;
 			base.opening = false;
 			// Number inputs don't support selectionStart and selectionEnd
 			// Number/email inputs don't support selectionStart and selectionEnd
