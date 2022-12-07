@@ -146,7 +146,8 @@ Wiki: [Home](https://github.com/Mottie/Keyboard/wiki/Home) | [FAQ](https://githu
 ## Change Log
 
 Only the latest changes will be shown below, see the [wiki log](https://github.com/Mottie/Keyboard/wiki/Log) to view older versions.
-
+### Version 1.30.3.3 (2022-12-07)
+* fix for  "undefined is not an object (evaluating 'a.$el')"
 ### Version 1.30.3 (2021-03-14)
 
 * Caret: Fix caret positioning in textarea
@@ -162,7 +163,7 @@ Only the latest changes will be shown below, see the [wiki log](https://github.c
 * Layout
   * Updated multiple layouts: Oriya, Tamil, Telugu, Malayalam, Hindi, Kannada, Bengali, Gujarati, Marathi, Nepali, Punjabi & Urdu; all thanks to [durga598](https://github.com/durga598)!
 * Language
-  * Fix French translation. Closes [issue #781](https://github.com/Mottie/Keyboard/issues/781) 
+  * Fix French translation. Closes [issue #781](https://github.com/Mottie/Keyboard/issues/781)
 * Docs
   * Fix first layouts demo.
 
