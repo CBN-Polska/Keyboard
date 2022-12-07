@@ -1,4 +1,4 @@
-/*! jQuery UI Virtual Keyboard v1.30.3 *//*
+/*! jQuery UI Virtual Keyboard v1.30.3.3 *//*
 Author: Jeremy Satterfield
 Maintained: Rob Garrison (Mottie on github)
 Licensed under the MIT License
@@ -42,7 +42,7 @@ http://www.opensource.org/licenses/mit-license.php
 	var $keyboard = $.keyboard = function (el, options) {
 	var o, base = this;
 
-	base.version = '1.30.3';
+	base.version = '1.30.3.3';
 
 	// Access to jQuery and DOM versions of element
 	base.$el = $(el);
@@ -186,7 +186,8 @@ http://www.opensource.org/licenses/mit-license.php
 		tmp.bind(bindings.split(' ').join(base.namespace + ' '), function(e) {
 			clearTimeout(base.timer3);
 			base.timer3 = setTimeout(function() {
-				base.checkClose(e);
+				if(base)
+				    base.checkClose(e);
 			}, 1);
 		});
 
@@ -476,6 +477,8 @@ http://www.opensource.org/licenses/mit-license.php
 		// the keyboard
 		base.timer2 = setTimeout(function () {
 			var undef;
+			if(!base)
+				return;
 			base.opening = false;
 			// Number inputs don't support selectionStart and selectionEnd
 			// Number/email inputs don't support selectionStart and selectionEnd
@@ -1853,7 +1856,7 @@ http://www.opensource.org/licenses/mit-license.php
 		if ($target.length && $target.hasClass(kbcss.keyboard)) {
 			var kb = $target.data('keyboard');
 			// only trigger on self
-			if (
+			if (kb &&
 				kb !== base &&
 				!kb.$el.hasClass(kbcss.isCurrent) &&
 				kb.options.openOn &&
