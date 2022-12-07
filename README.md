@@ -146,7 +146,7 @@ Wiki: [Home](https://github.com/Mottie/Keyboard/wiki/Home) | [FAQ](https://githu
 ## Change Log
 
 Only the latest changes will be shown below, see the [wiki log](https://github.com/Mottie/Keyboard/wiki/Log) to view older versions.
-### Version 1.30.3.3 (2022-12-07)
+### Version 1.30.10 (2022-12-07)
 * fix for  "undefined is not an object (evaluating 'a.$el')"
 ### Version 1.30.3 (2021-03-14)
 
