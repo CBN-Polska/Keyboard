@@ -1856,7 +1856,7 @@ http://www.opensource.org/licenses/mit-license.php
 		if ($target.length && $target.hasClass(kbcss.keyboard)) {
 			var kb = $target.data('keyboard');
 			// only trigger on self
-			if (
+			if (kb &&
 				kb !== base &&
 				!kb.$el.hasClass(kbcss.isCurrent) &&
 				kb.options.openOn &&
